@@ -1,4 +1,4 @@
-package com.we_love_crazy_quote.bmicalculator;
+package com.we_love_crazy_quote.bmi_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.we_love_crazy_quote.bmi_calculator.R;
+
+import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -69,7 +71,7 @@ public class MainActivity extends AppCompatActivity
 
 //Converting the number String into variables
 
-        int age= Integer.parseInt(ageText);
+        int age = Integer.parseInt(ageText);
         int feet = Integer.parseInt(feetText);
         int inches = Integer.parseInt(inchesText);
         int weight = Integer.parseInt(weightText);
@@ -80,11 +82,58 @@ public class MainActivity extends AppCompatActivity
         //BMi Formula
         double bmi   = weight*(heightInMeter*heightInMeter);
 //we must convert the decimal/double into a string for a textView
-        String bmitextResult=String.valueOf(bmi);
+        String bmitextResult = String.valueOf(bmi);
 
 
         resultText.setText(bmitextResult);
 //resultText.setText("Age:"+ageText+"feet :"+feetText+"Inches:"+inchesText+"Weight :"+weightText);
 
     }
+    private void displayResult(double bmi)
+    {
+        DecimalFormat myDecimalFormatter = new DecimalFormat(  "0.00");
+        String bmiTextResult = myDecimalFormatter.format(bmi);
+        String fullResultString;
+        if(bmi <18.5)
+        {
+            //Display underweight
+            fullResultString =bmiTextResult +" - You are underweight";
+
+        }
+        else if(bmi > 25)
+        {
+          //Display overweight
+          fullResultString = bmiTextResult+" - You are overweight";
+
+        }
+        else
+        {
+            //Display healthy
+            fullResultString =bmiTextResult+" -You are a healthy weight";
+        }
+    resultText.setText(fullResultString);
+    }
+        private void displayGuidance(double bmi)
+        {
+            DecimalFormat myDecimalFormatter = new DecimalFormat(  "0.00");
+            String bmiTextResult = myDecimalFormatter.format(bmi);
+            String fullResultString;
+            if(maleButton.isChecked())
+            {
+                //display boy Guidance
+                fullResultString = bmiTextResult + "- As you are under 18 , please consult with your doctor for the healthy range for boys";
+
+            }
+            else if(femaleButton.isChecked())
+            {
+                //Display girl Guidance
+                fullResultString = bmiTextResult + " - As you are under 18 , please consult with your doctor for the healthy range for girls";
+
+            }
+            else {
+                //Display genral guidance
+                fullResultString = bmiTextResult + "- As you are under 18 , please consult with your doctor for the healthy range";
+            }
+            resultText.setText(fullResultString);
+        }
 }
