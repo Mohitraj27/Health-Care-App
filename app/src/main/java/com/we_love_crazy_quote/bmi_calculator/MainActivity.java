@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
         findViews();
         setupButtonClickListener();
     }
-    private  void findViews()
+    private void findViews()
     {
 
         resultText = findViewById(R.id.Text_View_result);
@@ -48,47 +48,54 @@ public class MainActivity extends AppCompatActivity
         weightEditText = findViewById(R.id.Edit_View_weight);
 
 
-        Button calculateButton = findViewById(R.id.button_calculate);
+        calculateButton = findViewById(R.id.button_calculate);
     }
-    private  void setupButtonClickListener()
+    private void setupButtonClickListener()
     {
-
         calculateButton.setOnClickListener(new View.OnClickListener() {
                                                @Override public void onClick(View v) {
-                                                   calculateBmi();
+                                                  double bmiResult=calculateBmi();
+                                                  String ageText=ageEditText.getText().toString();
+                                                  int age=Integer.parseInt(ageText);
+                                                  if(age>=18)
+                                                      displayResult(bmiResult);
+                                                  else
+                                                      displayGuidance(bmiResult);
 
                                                }
-                                           }
-        );}
-    private void calculateBmi()
-    {
+                                               private double calculateBmi()
+                                               {
 
-        String ageText=ageEditText.getText().toString();
-        String feetText=feetEditText.getText().toString();
-        String inchesText=inchesEditText.getText().toString();
-        String weightText=weightEditText.getText().toString();
+                                                   String ageText=ageEditText.getText().toString();
+                                                   String feetText=feetEditText.getText().toString();
+                                                   String inchesText=inchesEditText.getText().toString();
+                                                   String weightText=weightEditText.getText().toString();
 
 
 //Converting the number String into variables
 
-        int age = Integer.parseInt(ageText);
-        int feet = Integer.parseInt(feetText);
-        int inches = Integer.parseInt(inchesText);
-        int weight = Integer.parseInt(weightText);
-        int totalInches = (feet*12) +inches;
+                                                   int age = Integer.parseInt(ageText);
+                                                   int feet = Integer.parseInt(feetText);
+                                                   int inches = Integer.parseInt(inchesText);
+                                                   int weight = Integer.parseInt(weightText);
+                                                   int totalInches = (feet*12) +inches;
 
 
-        double heightInMeter = totalInches*0.0254;
-        //BMi Formula
-        double bmi   = weight*(heightInMeter*heightInMeter);
+                                                   double heightInMeter = totalInches*0.0254;
+                                                   //BMi Formula
+                                                   double bmi   = weight/(heightInMeter*heightInMeter);
+                                                   return bmi;
 //we must convert the decimal/double into a string for a textView
-        String bmitextResult = String.valueOf(bmi);
 
 
-        resultText.setText(bmitextResult);
+
+
 //resultText.setText("Age:"+ageText+"feet :"+feetText+"Inches:"+inchesText+"Weight :"+weightText);
 
-    }
+                                               }
+                                           }
+        );}
+
     private void displayResult(double bmi)
     {
         DecimalFormat myDecimalFormatter = new DecimalFormat(  "0.00");
