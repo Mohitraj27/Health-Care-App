@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f2e8">
+<LinearLayout
     android:orientation="vertical"
     android:padding="15dp"
     android:gravity="center_horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    android:text=" Welcome!!
+
+    This app gives a general indicator of whether a person has a
+
+healthy body weight for their height. Specifically, the value
+
+obtained from the calculation of BMI is used to categorize
+
+whether a person is underweight, normal weight, overweight,
+
+ or obese depending on what range the value falls between.
+
+
+"></TextView>
+
     <ImageView
-        android:src="@drawable/weighing_image"
         android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/weighing_image" />
+
     <TextView
         android:layout_margin="5dp"
         android:layout_width="wrap_content"
@@ -80,11 +108,173 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Calculate"/>
-
     <TextView
         android:id="@+id/Text_View_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="23.6    You are a Healthy Weight!" />
+        android:text="   " />
+    <TextView
 
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="95dp"
+
+        android:text="Our Nutritional needs change with different life Stages.
+                       To be Fit and Healthy,it is important to take into account
+                      the extra demands placed on your body by these changes "
+        app:fontFamily="sans-serif-medium"
+       />
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+       >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/infancy"
+        android:gravity="left"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Infancy(0-12Months)"
+    android:gravity="center"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+         >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/preschool_children" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pre-school  Children"
+            android:gravity="center"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/adolenscence" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adolescence(10-17years)"
+            android:gravity="center"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+         >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/young_adults" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Young Adults(18-30Years)"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/preganant_women" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pregnant Women"
+            android:gravity="center"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+         >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/senior_citizen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senior Citizens (60+) "
+            android:gravity="center"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
+
+
+</ScrollView>
