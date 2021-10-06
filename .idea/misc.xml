@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/drawable/button.xml" value="0.1" />
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
-        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_infacy.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_login.xml" value="0.536" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_main.xml" value="0.24110671936758893" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_welcome_page.xml" value="0.4204152249134948" />
       </map>
     </option>

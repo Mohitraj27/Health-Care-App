@@ -107,21 +107,21 @@ public class MainActivity extends AppCompatActivity
         {
             //Display underweight
             fullResultString ="BMI Value is "+bmiTextResult +
-                                              "                      You are underweight";
+                                              "                      You are underweight.";
 
         }
         else if(bmi > 25)
         {
           //Display overweight
           fullResultString = "BMI Value is " +bmiTextResult+
-                                              "                      You are overweight";
+                                              "                      You are overweight.";
 
         }
         else
         {
             //Display healthy
             fullResultString ="BMI Value is "+bmiTextResult+
-                                             "                      You are a healthy weight";
+                                             "                      You are a healthy weight.";
         }
     resultText.setText(fullResultString);
     }
@@ -133,18 +133,18 @@ public class MainActivity extends AppCompatActivity
             if(maleButton.isChecked())
             {
                 //display boy Guidance
-                fullResultString = "BMI Value is "+bmiTextResult + "                      As you are under 18 , please consult with your doctor for the healthy range for boys";
+                fullResultString = "BMI Value is "+bmiTextResult + "                         As you are under 18 , please consult with your doctor for the healthy range for boys.";
 
             }
             else if(femaleButton.isChecked())
             {
                 //Display girl Guidance
-                fullResultString = "BMI Value is "+bmiTextResult + "                      As you are under 18 , please consult with your doctor for the healthy range for girls";
+                fullResultString = "BMI Value is "+bmiTextResult + "                         As you are under 18 , please consult with your doctor for the healthy range for girls.";
 
             }
             else {
                 //Display genral guidance
-                fullResultString ="BMI Value is "+ bmiTextResult + "                      As you are under 18 , please consult with your doctor for the healthy range";
+                fullResultString ="BMI Value is "+ bmiTextResult + "                         As you are under 18 , please consult with your doctor for the healthy range.";
             }
             resultText.setText(fullResultString);
         }
