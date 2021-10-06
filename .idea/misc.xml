@@ -6,11 +6,17 @@
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/drawable/button.xml" value="0.1" />
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_adolescence.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_infacy.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_infancy.xml" value="0.21571969696969698" />
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_login.xml" value="0.536" />
-        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_main.xml" value="0.24110671936758893" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_pre_school_children.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_preganat_women.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_senior_citizen.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_welcome_page.xml" value="0.4204152249134948" />
+        <entry key="..\:/Users/win10/BMI_Calculator/app/src/main/res/layout/activity_young_adults.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

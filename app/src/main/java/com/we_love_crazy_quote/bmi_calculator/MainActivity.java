@@ -1,8 +1,10 @@
 package com.we_love_crazy_quote.bmi_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +28,12 @@ public class MainActivity extends AppCompatActivity
     private  EditText feetEditText;
     private EditText inchesEditText;
     private EditText weightEditText;
+     CardView InfancyCard;
+     CardView Pre_SchoolChildrenCard;
+     CardView AdolescenceCard;
+     CardView young_adultsCard;
+     CardView Preganat_WomenCard;
+   CardView Senior_CitizenCard;
 
 
     @Override
@@ -33,6 +41,57 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        InfancyCard = findViewById(R.id.card_view_infancy);
+        InfancyCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent InfancyActivityIntent = new Intent(MainActivity.this,Infancy_Activity.class);
+                startActivity(InfancyActivityIntent);
+
+            }
+        });
+        Pre_SchoolChildrenCard = findViewById(R.id.card_view_Pre_school_Children);
+        Pre_SchoolChildrenCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Pre_SchoolIntent = new Intent(MainActivity.this,pre_School_Children_Activity.class);
+                startActivity(Pre_SchoolIntent);
+            }
+        });
+        AdolescenceCard = findViewById(R.id.card_view_adolescence);
+        AdolescenceCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent AdolescenceActivityIntent = new Intent(MainActivity.this,Adolescence_Activity.class);
+                startActivity(AdolescenceActivityIntent);
+
+
+            }
+        });
+        young_adultsCard = findViewById(R.id.card_view_young_adults);
+        young_adultsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent YoungAdultsIntent = new Intent(MainActivity.this,young_Adults_Activity.class);
+                startActivity(YoungAdultsIntent );
+            }
+        });
+        Preganat_WomenCard= findViewById(R.id.card_view_pregnant_Women);
+        Preganat_WomenCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent PregnantWomenIntent = new Intent(MainActivity.this,preganat_women_activity.class);
+                startActivity(PregnantWomenIntent);
+            }
+        });
+        Senior_CitizenCard = findViewById(R.id.card_view_senior_citizen);
+        Senior_CitizenCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent SeniorCitizenIntent = new Intent(MainActivity.this,senior_citizen_activity.class);
+                startActivity(SeniorCitizenIntent);
+            }
+        });
         findViews();
         setupButtonClickListener();
     }

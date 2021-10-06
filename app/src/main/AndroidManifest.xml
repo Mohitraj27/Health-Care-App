@@ -9,7 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BMI_Calculator">
-
+        <activity
+            android:name=".senior_citizen_activity"
+            android:exported="true"
+            android:label="Senior Citizen"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".preganat_women_activity"
+            android:exported="true"
+            android:label="Pregnant Women"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".young_Adults_Activity"
+            android:exported="true"
+            android:label="Young Adults"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Adolescence_Activity"
+            android:label="Adolescence"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".pre_School_Children_Activity"
+            android:label="Pre-School Children"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Infancy_Activity"
+            android:label="Infancy "
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
