@@ -15,7 +15,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="10dp"
-  android:textSize="20sp"
+
     android:text=" Welcome!!
 
     This app gives a general indicator of whether a person has a
@@ -30,38 +30,22 @@ whether a person is underweight, normal weight, overweight,
 
 
 "></TextView>
-    <androidx.cardview.widget.CardView
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/weighing_image" />
+
+    <TextView
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        >
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/weighing_image" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BMI Calculator               "
-                android:textSize="15sp"
-                android:gravity="center"/>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-
+        android:text="BMI Calculator"/>
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:orientation="horizontal">
         <RadioButton
             android:id="@+id/radio_button_male"
 
@@ -80,7 +64,6 @@ whether a person is underweight, normal weight, overweight,
         android:id="@+id/Edit_text_Age"
         android:inputType="number"
         android:layout_margin="5dp"
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint= "Age"/>
@@ -89,8 +72,7 @@ whether a person is underweight, normal weight, overweight,
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/Edit_View_Feet"
@@ -113,7 +95,6 @@ whether a person is underweight, normal weight, overweight,
 
     </LinearLayout>
     <EditText
-        android:layout_marginTop="10dp"
         android:id="@+id/Edit_View_weight"
         android:inputType="number"
         android:layout_margin="3dp"
@@ -121,35 +102,29 @@ whether a person is underweight, normal weight, overweight,
         android:layout_height="wrap_content"
         android:hint="Weight"/>
     <Button
-        android:layout_marginTop="10dp"
         android:id="@+id/button_calculate"
         android:textColor="@color/black"
         android:layout_margin="2dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Calculate"/>
-
     <TextView
         android:id="@+id/Text_View_result"
-        android:layout_width="355dp"
-        android:layout_height="125dp"
-        android:text="            "
-        android:textSize="25sp" />
-    <TextView
-
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="   " />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginTop="95dp"
-        android:textSize="25sp"
+
         android:text="Our Nutritional needs change with different life Stages.
                        To be Fit and Healthy,it is important to take into account
-                      the extra demands placed on your body by these changes. "
+                      the extra demands placed on your body by these changes "
         app:fontFamily="sans-serif-medium"
        />
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+
     <androidx.cardview.widget.CardView
 
         android:layout_width="wrap_content"
@@ -181,7 +156,6 @@ whether a person is underweight, normal weight, overweight,
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="95dp"
-        android:layout_marginStart="225dp"
          >
 
     <LinearLayout
@@ -201,10 +175,6 @@ whether a person is underweight, normal weight, overweight,
             android:gravity="center"/>
     </LinearLayout>
     </androidx.cardview.widget.CardView>
-</RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
     <androidx.cardview.widget.CardView
 
         android:layout_width="wrap_content"
@@ -234,7 +204,6 @@ whether a person is underweight, normal weight, overweight,
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="95dp"
-        android:layout_marginStart="215dp"
          >
 
     <LinearLayout
@@ -256,10 +225,6 @@ whether a person is underweight, normal weight, overweight,
             />
     </LinearLayout>
     </androidx.cardview.widget.CardView>
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
     <androidx.cardview.widget.CardView
 
         android:layout_width="wrap_content"
@@ -289,7 +254,6 @@ whether a person is underweight, normal weight, overweight,
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="95dp"
-        android:layout_marginStart="215dp"
          >
 
     <LinearLayout
@@ -310,8 +274,6 @@ whether a person is underweight, normal weight, overweight,
             android:gravity="center"/>
     </LinearLayout>
     </androidx.cardview.widget.CardView>
-    </RelativeLayout>
-
 </LinearLayout>
 
 
