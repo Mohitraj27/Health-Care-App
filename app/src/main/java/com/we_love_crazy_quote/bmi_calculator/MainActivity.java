@@ -2,8 +2,8 @@ package com.we_love_crazy_quote.bmi_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import android.speech.tts.TextToSpeech;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,9 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.we_love_crazy_quote.bmi_calculator.R;
+import java.util.Locale;
+
 
 import java.text.DecimalFormat;
 
@@ -34,13 +34,23 @@ public class MainActivity extends AppCompatActivity
      CardView young_adultsCard;
      CardView Preganat_WomenCard;
    CardView Senior_CitizenCard;
-
+private EditText NameText;
+private TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        NameText = findViewById(R.id.Enter_your_name);
+        textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                textToSpeech.setLanguage(Locale.US);
+                textToSpeech.setSpeechRate((float) 0.5);
+            }
+        });
+
         InfancyCard = findViewById(R.id.card_view_infancy);
         InfancyCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +106,9 @@ public class MainActivity extends AppCompatActivity
         setupButtonClickListener();
     }
 
+ public  void TexttoSpeechButton(View view){
+        textToSpeech.speak(NameText.getText().toString(),TextToSpeech.QUEUE_FLUSH,null,null);
+ }
 
     private void findViews()
     {
