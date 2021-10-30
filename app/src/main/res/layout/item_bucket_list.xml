@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<TextView
+    android:layout_toStartOf="@id/card_view_image_container"
+    android:id="@+id/text_view_heading"
+    android:layout_marginTop="8dp"
+    android:textSize="18sp"
+    android:textColor="#272727"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="1. Item Heading."/>
+
+    <TextView
+        android:id="@+id/text_view_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/text_view_heading"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@id/card_view_image_container"
+        android:textColor="#777777"
+        android:textSize="14sp"
+        android:text="This will be my description of my content. I am learning Android Development" />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="15dp"
+        android:text="How to Make" />
+
+
+    <RatingBar
+    android:id="@+id/rating_bar"
+    android:layout_marginTop="60dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.AppCompat.RatingBar.Small"
+    android:layout_alignBottom="@id/card_view_image_container"
+    tools:rating="3.5f"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_image_container"
+        android:layout_width="160dp"
+        android:layout_height="144dp"
+        android:layout_alignParentEnd="true"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/cerelac_image"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/cerelac_image" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
