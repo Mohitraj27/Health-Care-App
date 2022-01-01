@@ -39,9 +39,18 @@ In Activity Main XML File and Other XML Files :
 
 In Main Activity Java and other Java File :
 
- - Intent  and startActivity is used to move from One activity to another.
+ - Intent  and startActivity is used to move from one activity to another.
  - findViewById and setOnClickListener so that when the user clicks on the Button the application gives the desired BMI Value.
- - if , elseif ,else is used to check the Condition of the user's age  and calculate accordingly.
+ - If , elseIf ,else is used to check the condition of the user's age  and calculate accordingly.
+ - Array Adapter and Recycler View is used to add the list of Nutrition Chart.
+ - setupButtonClickListener is used for connecting the calculate Button to Java code so that the BMI value will be calculated.
+ - In Array Adapter heading , Description & rating bar is added also Image is added in drawable file for each item.
+ 
+ 
+ 
+ 
+ 
+ 
 
 ![WhatsApp Image 2021-12-31 at 1 30 29 AM](https://user-images.githubusercontent.com/87956374/147784538-e0d47006-f222-4e5d-8346-4aab36204e54.jpeg)
 
