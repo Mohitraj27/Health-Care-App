@@ -2,7 +2,6 @@
 
 
 
-
 # BMI_Calculator
 
 ## About the App
