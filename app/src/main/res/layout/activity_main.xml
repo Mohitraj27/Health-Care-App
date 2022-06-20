@@ -161,7 +161,8 @@ whether a person is underweight, normal weight,overweight,or obese depending on 
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
 
-            android:hint="Enter Your Weight">
+            android:hint="Enter Your Weight"
+            tools:ignore="MissingClass">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/Edit_View_weight"
                 android:layout_width="180dp"
