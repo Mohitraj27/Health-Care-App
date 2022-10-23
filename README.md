@@ -2,7 +2,7 @@
 
 
 
-# BMI_Calculator
+# Health_care_app
 
 ## About the App
 This app gives a general indicator of whether a person has a healthy body weight for their height. 
